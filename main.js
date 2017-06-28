@@ -47,7 +47,7 @@ let maxStats = {
 };
 const firewalls = ["1", "2", "3"];
 const ocrApiKey = "XXX";
-const db = "https://raw.githubusercontent.com/VianneyAin/s0urce.io/master/db2.json";
+const db = "https://raw.githubusercontent.com/VianneyAin/s0urce.io/master/db3.json";
 let message = ":)";
 let wordFreq = 1250;
 let mineFreq = 3000;
@@ -357,6 +357,7 @@ app = {
 				return;
 			}
 			log("* Not seen, trying OCR...");
+            app.restart()
 			//app.ocr(wordLink);
 		}
 		else {
